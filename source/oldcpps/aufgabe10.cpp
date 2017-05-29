@@ -3,7 +3,7 @@
 using namespace std;
 
 template <typename vector, typename predicate>
-vector filter(vector const& v0, predicate p){
+vector filter(vector const& v0, predicate const& p){
     vector v1 (v0.size());
 	copy_if(v0.begin(), v0.end(), v1.begin(), p);
     return v1;
